@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --brand:#ea580c;
+}
+body{
+  @apply bg-slate-100 text-slate-900;
+}
+.card{ @apply rounded-xl bg-white shadow border border-slate-200; }
+.btn{ @apply rounded-md px-4 py-2 bg-[color:var(--brand)] text-white hover:opacity-90 disabled:opacity-50; }
+.input{ @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2; }
+.label{ @apply text-sm text-slate-600; }
+.badge{ @apply inline-flex items-center rounded-full bg-slate-200 px-2 py-0.5 text-xs; }
+.link{ @apply text-[color:var(--brand)] hover:underline; }
